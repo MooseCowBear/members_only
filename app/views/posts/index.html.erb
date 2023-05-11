@@ -1,0 +1,16 @@
+<div class="post__header">
+  <h1>Posts</h1>
+  <%= link_to "New Post", new_post_path %>
+</div>
+
+<ul class="posts">
+  <% @posts.reverse_each do |post| %>
+    <li class="post__card">
+      <div class="post-title__wrapper">
+        <%= link_to post.title, post %>
+        <%= post.created_at.strftime('%m/%d/%Y') %>
+      </div>
+      <%= post.body %>
+    </li>
+  <% end %>
+</ul>
