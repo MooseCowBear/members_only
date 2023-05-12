@@ -1,6 +1,13 @@
 <div class="post-show__wrapper">
   
-  <h1><%= @post.title %></h1>
+  <div>
+    <h1><%= @post.title %></h1>
+    <% if @post.created_at.today? %>
+      <%= @post.created_at.strftime('%l:%M %P') %>
+    <% else %>
+      <%= @post.created_at.strftime('%m/%d/%Y') %>
+    <% end %>
+  </div>
 
   <p class="post__body"><%= @post.body %></p>
 
