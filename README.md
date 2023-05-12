@@ -1,24 +1,9 @@
-# README
+# TrailNotes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an implementation of the Members Only project, from [the Odin Project's](https://theodinproject.com) Rails Path. 
 
-Things you may want to cover:
+## Features
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Authorization with the Devise Gem.
+- Only members who are signed in may view the authors of posts. 
+- Only the author of a post may edit or delete it. 
