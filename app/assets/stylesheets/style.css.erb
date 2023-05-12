@@ -71,7 +71,6 @@ a:not([class]) {
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: var(--neutral-dark-000);
   background-image: url(<%= asset_path 'josiah-gardner-ksi5l4iJBjM-unsplash.jpg' %>);
   background-size: cover;
   padding: var(--padding);
@@ -273,4 +272,16 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+@media only screen and (max-width: 350px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__links {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
