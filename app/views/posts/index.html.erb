@@ -19,7 +19,7 @@
         </div>
         <%= post.body %>
         <% if user_signed_in? %>
-          <%= post.user.username %>
+          <p>posted by: <%= post.user.username %></p>
         <% end %>
       </li>
     <% end %>
