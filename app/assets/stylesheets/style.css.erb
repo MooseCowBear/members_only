@@ -64,6 +64,7 @@ a:not([class]) {
   --accent-200b: rgba(252, 165, 128, 0.6);
   --warning: rgb(250, 128, 114);
   --padding: 1rem;
+  --gap: 1rem;
 }
 
 body {
@@ -71,11 +72,11 @@ body {
   font-size: 16px;
   background-image: url(<%= asset_path 'josiah-gardner-ksi5l4iJBjM-unsplash.jpg' %>);
   background-size: cover;
-  padding: var(--padding);
+  padding: var(--gap);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: var(--gap);
   color: var(--accent-200);
   position: relative;
 }
@@ -100,7 +101,7 @@ header {
 
 .header__links {
   display: flex;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 ul {
@@ -116,11 +117,11 @@ h1 {
 .greeting {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem var(--padding);
   border-radius: 15px;
   border: 2px solid var(--accent-100);
   background-color: transparent;
@@ -137,7 +138,7 @@ button:hover, button:focus {
 .posts_index {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .post__header {
@@ -159,26 +160,26 @@ button:hover, button:focus {
 .posts {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .post__card, .no-posts {
   background-color: var(--accent-200);
   color: var(--accent-100b);
   border-radius: 15px;
-  padding: 1rem;
+  padding: var(--padding);
   width: clamp(300px, 50vw, 1000px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .form__wrapper {
   background-color: var(--accent-200);
   color: var(--accent-100b);
   border-radius: 15px;
-  padding: 1rem;
+  padding: var(--padding);
 }
 
 .form__wrapper textarea {
@@ -204,7 +205,7 @@ button:hover, button:focus {
 }
 
 input[type="submit"] {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem var(--padding);
   border-radius: 15px;
   border: 2px solid var(--accent-100b);
   background-color: transparent;
@@ -226,7 +227,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 input[type=checkbox] {
@@ -249,19 +250,19 @@ input[type=checkbox] {
 .post__new, .post__edit {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .post-show__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .post__body {
   width: clamp(300px, 50vw, 1000px);
   border-radius: 15px;
-  padding: 1rem;
+  padding: var(--padding);
   background-color: var(--accent-200);
   color: var(--accent-100b);
 }
@@ -269,7 +270,7 @@ input[type=checkbox] {
 .registration-edit {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .edit__section.cancel {
