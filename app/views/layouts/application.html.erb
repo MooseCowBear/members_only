@@ -10,12 +10,16 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <div class="header__left">
-      <h2>MembersOnly</h2>
+    <header>
+      <h2 class="logo">MembersOnly</h2>
       <%= link_to "Home", root_path %>
-    </div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    </header>
+    <main>
+      <div class="flash__messages">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+      <%= yield %>
+    </main>
   </body>
 </html>

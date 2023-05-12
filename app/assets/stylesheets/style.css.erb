@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap');
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p, 
+section,
+article {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* end reset */
+
+:root {
+  --neutral-dark-100: #15202B;
+  --neutral-light-100: #ffffff;
+  --accent-100: rgb(27, 66, 97);
+  --accent-200: rgb(0, 34, 62);
+  --neutral-dark-000: rgb(0, 0, 9);
+  --accent-100b: rgb(248, 213, 173);
+  --accent-200b: rgb(252, 165, 128);
+
+  --padding: 1rem;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-image: url(<%= asset_path 'josiah-gardner-ksi5l4iJBjM-unsplash.jpg' %>);
+  background-size: 100%;
+  padding: var(--padding);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+}
+
