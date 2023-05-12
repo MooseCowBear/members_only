@@ -1,0 +1,5 @@
+<% if p.created_at.today? %>
+  <%= "today" %>
+<% else %>
+  <%= p.created_at.strftime('%m/%d/%Y') %>
+<% end %>
