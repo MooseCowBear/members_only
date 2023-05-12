@@ -10,8 +10,12 @@
     <% @posts.reverse_each do |post| %>
       <li class="post__card">
         <div class="post-title__wrapper">
-        <%= link_to post.title, post %>
-          <%= post.created_at.strftime('%m/%d/%Y') %>
+          <%= link_to post.title, post %>
+          <% if post.created_at.today? %>
+            <%= post.created_at.strftime('%l:%M %P') %>
+          <% else %>
+            <%= post.created_at.strftime('%m/%d/%Y') %>
+          <% end %>
         </div>
         <%= post.body %>
         <% if user_signed_in? %>
