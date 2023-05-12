@@ -1,9 +1,11 @@
-<%= render "greeting" %>
-<div class="posts_index">
 
+<div class="posts_index">
+  <div>
+  <%= render "greeting" %>
   <div class="post__header">
     <h1>Posts</h1>
     <%= link_to "New Post", new_post_path %>
+  </div>
   </div>
 
   <% if @posts.empty? %>
